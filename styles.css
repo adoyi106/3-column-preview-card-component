@@ -1,0 +1,151 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ }
+ 
+ body{
+     font-family: "inter" sans-serif;
+     font-weight: 500;
+ }
+
+ .container {
+    width: 800px;
+    margin: 100px auto;
+    
+ }
+
+ .preview-card{
+    display: flex;
+    /* gap: 24px; */
+    
+    
+ }
+
+ .card {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding: 24px;
+    line-height: 1.2;
+    color: #f1f3f5;
+ }
+ .card P{
+    font-size: 16px;
+ }
+ img{
+    width: 50px;
+ }
+ button{
+    width: 150px;
+    height: 40px;
+    margin-top: 15px;
+    border-radius: 100px;
+    border: none;
+    cursor: pointer;
+ }
+ .learn:link,
+ .link:visited{
+    text-decoration: none;
+ }
+ button:hover{
+    background-color: #ced4da;
+ }
+ .card-1{
+    background-color: #e67700 ;
+    padding: 24px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+ }
+.card-2{
+    background-color: #0b7285;
+    padding: 24px;
+}
+.card-3{
+    background-color:#087f5b ;
+    padding: 24px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.card-1 .learn {
+    color: #e67700;
+}
+.card-2 .learn {
+    color:#0b7285 ;
+}
+.card-3 .learn{
+    color: #087f5b ;
+}
+
+@media  (min-width: 300px) and (max-width: 600px) {
+    .container {
+        width: 300px;
+        margin: 50px 50px ;
+        padding: 24px;
+        
+        
+     }
+    .preview-card{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        /* gap: 24px; */ 
+     }
+
+    .card {
+        line-height: 1.6;
+        padding: none;
+    }
+
+    .card-1{
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        border-bottom-left-radius: 0;
+
+     }
+     .card-3{
+        
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        border-top-right-radius: 0;
+    }
+    
+}
+
+@media  (min-width: 601px) and (max-width: 900px) {
+    .container {
+        width: 600px;
+        margin: 50px 50px ;
+        /* padding: 0; */
+        
+     }
+    .preview-card{
+        display: flex;
+        
+        align-items: center;
+        justify-content: center;
+        /* gap: 24px; */ 
+     }
+
+    .card {
+        line-height: 1.4;
+        padding: none;
+    }
+
+    .card-1{
+        padding: 10px;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 10px;
+
+     }
+     .card-3{
+        padding: 10px;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+    
+}
+
